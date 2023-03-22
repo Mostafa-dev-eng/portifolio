@@ -1,0 +1,33 @@
+/* var fonts */
+
+$body-fonts: "Roboto", sans-serif;
+$title-fonts: "Lora", serif;
+
+/* var color light */
+
+$first-color: hsl(207, 65%, 65%);
+$title-color: hsl(207, 4%, 16%);
+$text-color: hsl(207, 4%, 28%);
+$text-color-light: hsl(207, 4%, 56%);
+$body-color: hsl(207, 4%, 99%);
+$container-color: hsl(207, 4%, 95%);
+
+/* var color light */
+
+$title-color-dark: hsl(207, 4%, 95%);
+$text-color-dark: hsl(207, 4%, 65%);
+$body-color-dark: hsl(207, 4%, 10%);
+$container-color-dark: hsl(207, 4%, 12%);
+
+/* gradient color */
+
+$gradient-color: linear-gradient(
+  180deg,
+  hsla(174, 48%, 72%, 0),
+  hsla(174, 65%, 65%, 1)
+);
+
+/* font weight */
+
+$font-medium: 500;
+$font-semi-bold: 600;

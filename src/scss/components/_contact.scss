@@ -1,0 +1,144 @@
+// ==================       light theme             ===================
+
+.section_contact {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .contact-cont {
+    padding-bottom: 100px;
+  }
+  .section_title {
+    font-size: 30px;
+    color: $title-color;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: $title-fonts;
+  }
+  .section_subtitle {
+    font-size: 15px;
+    color: $text-color-light;
+  }
+  /* =========== start Talk to me whatsapp messanger ========*/
+
+  .contact_title {
+    font-size: 18px;
+    font-weight: $font-medium;
+    margin-bottom: 50px;
+    i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+  .contact-em,
+  .contact-wa,
+  .contact-mess {
+    .contact_data-title {
+      color: $text-color-light;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .contact_data-info {
+      color: $title-color;
+      font-family: $title-fonts;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .contact_button {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: $title-color;
+      &:hover {
+        i {
+          transform: translateX(6px);
+        }
+      }
+      i {
+        font-size: 16px;
+        margin-left: 10px;
+        transition: transform 0.6s;
+      }
+    }
+  }
+
+  /* =========== end Talk to me whatsapp messanger ========*/
+
+  /*============ start email input ========*/
+
+  .contact_form {
+    position: relative;
+    .contact_form_titl {
+      position: relative;
+      height: 60px;
+      margin-bottom: 45px;
+      .contact_form_tag {
+        position: absolute;
+        top: -20px;
+        left: 25px;
+        z-index: 10;
+        background-color: $body-color;
+        color: $title-color;
+        font-size: 15px;
+        font-weight: $font-medium;
+        padding: 8px;
+      }
+      .contact_form_input {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $text-color-light;
+        outline: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-family: $title-fonts;
+        color: $title-color;
+        background: none;
+        padding: 20px;
+        z-index: 1;
+      }
+    }
+    .contact_form_prog {
+      height: 160px;
+      textarea {
+        resize: none;
+      }
+    }
+    .color-blue {
+      color: hsl(207, 56%, 45%);
+    }
+    .color-red {
+      color: hsl(4, 71%, 50%);
+    }
+    .contact_message {
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+      font-size: 15px;
+    }
+    .contact_bttn {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: none;
+      font-size: 20px;
+      font-family: $title-fonts;
+      font-weight: $font-semi-bold;
+      outline: none;
+      margin-top: 12px;
+      transition: 0.4s;
+      i {
+        font-size: 20px;
+        transition: transform 0.6s;
+        margin-left: 10px;
+      }
+      &:hover {
+        i {
+          transform: translateX(6px);
+        }
+      }
+    }
+  }
+
+  /*============ end email input ========*/
+}

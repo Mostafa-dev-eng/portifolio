@@ -1,0 +1,276 @@
+.body-light-theme {
+  font-family: $body-fonts;
+  background-color: $body-color;
+  color: $text-color;
+  h1,
+  h2,
+  h3 {
+    color: $title-color;
+    font-family: $title-fonts;
+    font-weight: $font-medium;
+  }
+  .home {
+    .home_blob {
+      border: 2px solid $title-color;
+    }
+    .links {
+      a {
+        color: $text-color-light;
+        &:hover {
+          color: $title-color;
+        }
+      }
+    }
+  }
+}
+
+// start theme dark
+
+.body-dark-theme {
+  background-color: $body-color-dark;
+  color: $text-color-dark;
+  font-family: $body-fonts;
+  h1,
+  h2,
+  h3 {
+    color: $title-color-dark;
+    font-family: $title-fonts;
+    font-weight: $font-medium;
+  }
+
+  // header dark
+  .header {
+    box-shadow: none;
+    .nav {
+      background-color: $body-color-dark;
+      .nav_logo,
+      .nav_toggle,
+      .nav_close {
+        color: $title-color-dark;
+      }
+      .change-theme-dark:hover,
+      .change-theme-light:hover {
+        color: $title-color-dark;
+      }
+      @include xlgwidth {
+        .nav_menu {
+          background-color: $body-color-dark;
+        }
+      }
+      .nav-link {
+        color: $text-color-dark;
+        &:hover {
+          color: $title-color-dark;
+        }
+      }
+    }
+  }
+
+  // home dark
+  .home {
+    .home_blob {
+      border: 2px solid $title-color-dark;
+    }
+    .links {
+      a {
+        color: $text-color-dark;
+        &:hover {
+          color: $title-color-dark;
+        }
+      }
+    }
+    .home_info {
+      .home_info-title {
+        color: $text-color-dark;
+      }
+      .home_info-number,
+      .home_info-description {
+        color: $title-color-dark;
+      }
+    }
+  }
+
+  // skills dark
+  .section_skills {
+    .section_title {
+      color: $title-color-dark;
+    }
+    .section_subtitle {
+      color: $text-color-dark;
+    }
+    .skills {
+      .skills-banner {
+        font-size: 15px;
+        font-weight: $font-semi-bold;
+        margin-bottom: 50px;
+        i {
+          font-size: 18px;
+        }
+      }
+      .skills_content {
+        .skills_title {
+          .skills_blob {
+            background-color: $container-color-dark;
+          }
+          .skills_subtitle {
+            color: $text-color-dark;
+          }
+        }
+      }
+    }
+  }
+
+  // services dark
+  .section_services {
+    .section_title {
+      color: $title-color-dark;
+    }
+    .section_subtitle {
+      color: $text-color-dark;
+    }
+    .services_content {
+      background: $container-color-dark;
+      &::before {
+        border: 1px solid $text-color-dark;
+      }
+      i {
+        color: $title-color-dark;
+      }
+      .services_title {
+        color: $title-color-dark;
+      }
+      .services_description {
+        color: $text-color-dark;
+      }
+    }
+  }
+
+  // project dark
+  .section_project {
+    .section_title {
+      color: $title-color-dark;
+    }
+    .section_subtitle {
+      color: $text-color-dark;
+    }
+    .owl-carousel {
+      .owl-dots {
+        .owl-dot {
+          span {
+            background-color: $text-color-dark;
+          }
+        }
+        .owl-dot.active {
+          span {
+            background-color: $title-color-dark;
+          }
+        }
+      }
+    }
+    .project_content {
+      .card {
+        .projects_subtitle {
+          color: $text-color-dark;
+        }
+        .projects_button {
+          color: $title-color-dark;
+        }
+      }
+    }
+  }
+
+  // contact dark
+  .section_contact {
+    .section_title {
+      color: $title-color-dark;
+    }
+    .section_subtitle {
+      color: $text-color-dark;
+    }
+    /* =========== start Talk to me whatsapp messanger ========*/
+    .contact-em,
+    .contact-wa,
+    .contact-mess {
+      .contact_data-title {
+        color: $text-color-dark;
+      }
+      .contact_data-info {
+        color: $title-color-dark;
+      }
+      .contact_button {
+        color: $title-color-dark;
+      }
+    }
+
+    /* =========== end Talk to me whatsapp messanger ========*/
+
+    /*============ start email input ========*/
+
+    .contact_form {
+      .contact_form_titl {
+        .contact_form_tag {
+          background-color: $body-color-dark;
+          color: $title-color-dark;
+        }
+        .contact_form_input {
+          border: 1px solid $text-color-dark;
+          color: $title-color-dark;
+        }
+      }
+
+      .contact_bttn {
+        color: $text-color-dark;
+        &:hover {
+          color: $title-color-dark;
+        }
+      }
+    }
+
+    /*============ end email input ========*/
+  }
+
+  //footer dark
+  .footer {
+    .footer_link {
+      li {
+        a {
+          color: $title-color-dark;
+        }
+      }
+    }
+    .footer_social-link {
+      li {
+        a {
+          color: $text-color-dark;
+          &:hover {
+            color: $title-color-dark;
+          }
+        }
+      }
+    }
+    .footer_copy {
+      color: $text-color-dark;
+    }
+  }
+}
+
+// end theme dark
+html {
+  scroll-behavior: smooth;
+}
+.section {
+  scrollbar-width: 20px;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: hsl(207, 4%, 85%);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(207, 4%, 55%);
+  border-radius: 10px;
+}

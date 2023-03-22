@@ -1,0 +1,43 @@
+/* bootstrap */
+
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* Core variables */
+
+@import "../scss/base/vars";
+
+/* remixicon */
+
+@import "../../node_modules/remixicon/fonts/remixicon.css";
+
+/* mixins */
+
+@import "../scss/base/mixins";
+
+/* reset */
+
+@import "../scss/base/reset";
+
+/* Demo Page styles */
+
+@import "../scss/components/header";
+
+@import "../scss/components/home";
+
+@import "../scss/components/skills";
+
+@import "../scss/components/services";
+
+@import "../scss/components/project";
+
+@import "../scss/components/contact";
+
+@import "../scss/components/footer";
+
+/* glubal-rules */
+
+@import "../scss/base/glubal-rules";

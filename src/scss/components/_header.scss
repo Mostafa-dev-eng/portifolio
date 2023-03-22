@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+  z-index: 22;
+  width: 100%;
+  height: 48px;
+  .nav {
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    background-color: $body-color;
+    border-radius: 48px;
+    height: 48px;
+    .nav_logo,
+    .nav_toggle,
+    .nav_close {
+      color: $title-color;
+    }
+    .nav_logo {
+      font-family: $title-fonts;
+      font-weight: $font-medium;
+    }
+    .nav_toggle {
+      cursor: pointer;
+      font-size: 24px;
+      display: flex;
+    }
+    @include xlgwidth {
+      .nav_menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: -60%;
+        margin: 0 auto;
+        background-color: $body-color;
+        border-radius: 32px;
+        box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+        width: 90%;
+        transition: bottom 0.3s;
+        padding: 30px 16px 80px;
+      }
+    }
+    .nav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      font-size: 14px;
+      color: $text-color-light;
+      transition: color 0.3s;
+      &:hover {
+        color: $title-color;
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+    .nav_close {
+      position: absolute;
+      right: 18px;
+      font-size: 22px;
+      bottom: 10px;
+      cursor: pointer;
+    }
+    .nav_buttons {
+      .change-theme-dark,
+      .change-theme-light {
+        cursor: pointer;
+      }
+    }
+    .show-menu {
+      bottom: 32px;
+    }
+  }
+}
+/* ============ media responsive ============*/
+
+@include xxlgwidth {
+  .header {
+    top: 0;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    height: 60px;
+    .nav {
+      box-shadow: none;
+      border-radius: 0;
+      height: 60px;
+      .nav_logo {
+        font-size: 26px;
+      }
+      .nav-link {
+        font-size: 16px;
+        font-weight: $font-medium;
+      }
+      .nav-link i,
+      .nav_toggle,
+      .nav_close {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ============================================= */
