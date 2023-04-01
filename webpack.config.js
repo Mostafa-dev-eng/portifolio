@@ -6,6 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const path = require('path');
+
 module.exports = {
     entry: {
         app: path.resolve(__dirname, "src", "js", "app.js"),
@@ -54,8 +55,19 @@ module.exports = {
                     collapseWhitespace: true,
                     removeAttributeQuotes: true,
                 }
+            }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            inject: "body",
+            template: "./src/about.ejs",
+            filename: "about.html",
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                removeAttributeQuotes: true,
             }
-        )],
+        })
+    ],
 
     module: {
         rules: [
